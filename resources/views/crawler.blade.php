@@ -25,7 +25,7 @@
                     <td>{{ $crawler->title }}</td>
                     <td>{{ \Illuminate\Support\Str::limit($crawler->description, 50) }}</td>
                     <td>{{ \Illuminate\Support\Str::limit($crawler->content, 150) }}</td>
-                    <td>{{ verta($crawler->create_at) }}</td>
+                    <td>{{ verta($crawler->create_date) }}</td>
                 </tr>
             @endforeach
             </tbody>
