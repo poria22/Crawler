@@ -3,6 +3,7 @@
 namespace App\Observers\Pokemon;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use \Hekmatinasser\Verta\Verta;
 use Illuminate\Support\Facades\Log;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
@@ -61,7 +62,11 @@ class PokemonGenerationScraperObserver extends CrawlObserver
         $title = $crawler->filter('h1')->text();
         $description = $crawler->filter('div.summary')->text();
 
-        $crawler->filter('div.content')->each(function (Crawler $node) use ($title, $description, $url) {
+        $dateInfo = $crawler->filter('span.date-info')->text();
+        $date = explode('|', $dateInfo)[0];
+        $jalaliDate = Verta::parse($date)->toCarbon();
+
+        $crawler->filter('div.content')->each(function (Crawler $node) use ($title, $description, $url, $jalaliDate) {
             $content = $node->text();
 
             CrawlerModel::updateOrCreate(
@@ -69,7 +74,8 @@ class PokemonGenerationScraperObserver extends CrawlObserver
                 [
                     'title' => $title,
                     'description' => $description,
-                    'content' => $content
+                    'content' => $content,
+                    'create_date' => $jalaliDate,
                 ]
             );
         });

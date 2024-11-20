@@ -20,14 +20,17 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        '4364d9898253482270d33c3e7d349234' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/helpers.php',
         '2203a247e6fda86070a5e4e07aed533a' => __DIR__ . '/..' . '/symfony/clock/Resources/now.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        '508dab6c0a7dfd955e775df925e6d583' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/helpers.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '2a3c2110e8e0295330dc3d11a4cbc4cb' => __DIR__ . '/..' . '/php-webdriver/webdriver/lib/Exception/TimeoutException.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '4ad677cf23be1eeec8c74951804d4cb0' => __DIR__ . '/..' . '/hekmatinasser/verta/src/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f57d353b41eb2e234b26064d63d8c5dd' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Filesystem/functions.php',
@@ -140,6 +143,12 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
         array (
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
+        ),
+        'H' => 
+        array (
+            'Hekmatinasser\\Verta\\' => 20,
+            'Hekmatinasser\\Notowo\\' => 21,
+            'Hekmatinasser\\Jalali\\' => 21,
         ),
         'G' => 
         array (
@@ -465,6 +474,18 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'Hekmatinasser\\Verta\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hekmatinasser/verta/src',
+        ),
+        'Hekmatinasser\\Notowo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hekmatinasser/notowo/src',
+        ),
+        'Hekmatinasser\\Jalali\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hekmatinasser/jalali/src',
+        ),
         'GuzzleHttp\\UriTemplate\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/uri-template/src',
@@ -555,9 +576,11 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
     );
 
     public static $classMap = array (
-        'App\\Http\\Controllers\\CcrawlerController' => __DIR__ . '/../..' . '/app/Http/Controllers/CcrawlerController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\CrawlerController' => __DIR__ . '/../..' . '/app/Http/Controllers/CrawlerController.php',
+        'App\\Models\\Crawler' => __DIR__ . '/../..' . '/app/Models/Crawler.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Observers\\Pokemon\\PokemonGenerationScraperObserver' => __DIR__ . '/../..' . '/app/Observers/Pokemon/PokemonGenerationScraperObserver.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
@@ -1717,6 +1740,31 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\InvalidDatetimeException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/InvalidDatetimeException.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\InvalidUnitException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/InvalidUnitException.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\UnknownGetterException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/UnknownGetterException.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\UnknownSetterException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/UnknownSetterException.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\UnknownTimezoneException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/UnknownTimezoneException.php',
+        'Hekmatinasser\\Jalali\\Exceptions\\UnknownUnitException' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Exceptions/UnknownUnitException.php',
+        'Hekmatinasser\\Jalali\\Jalali' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Jalali.php',
+        'Hekmatinasser\\Jalali\\JalaliInterface' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/JalaliInterface.php',
+        'Hekmatinasser\\Jalali\\Traits\\Accessor' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Accessor.php',
+        'Hekmatinasser\\Jalali\\Traits\\Boundaries' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Boundaries.php',
+        'Hekmatinasser\\Jalali\\Traits\\Comparison' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Comparison.php',
+        'Hekmatinasser\\Jalali\\Traits\\Creator' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Creator.php',
+        'Hekmatinasser\\Jalali\\Traits\\Date' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Date.php',
+        'Hekmatinasser\\Jalali\\Traits\\Difference' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Difference.php',
+        'Hekmatinasser\\Jalali\\Traits\\Formatting' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Formatting.php',
+        'Hekmatinasser\\Jalali\\Traits\\Modification' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Modification.php',
+        'Hekmatinasser\\Jalali\\Traits\\Transformation' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Transformation.php',
+        'Hekmatinasser\\Jalali\\Traits\\Translator' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Translator.php',
+        'Hekmatinasser\\Jalali\\Traits\\Validation' => __DIR__ . '/..' . '/hekmatinasser/jalali/src/Traits/Validation.php',
+        'Hekmatinasser\\Notowo\\Notowo' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/Notowo.php',
+        'Hekmatinasser\\Notowo\\NotowoServiceProvider' => __DIR__ . '/..' . '/hekmatinasser/notowo/src/NotowoServiceProvider.php',
+        'Hekmatinasser\\Verta\\Facades\\Verta' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Facades/Verta.php',
+        'Hekmatinasser\\Verta\\Laravel\\JalaliValidator' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Laravel/JalaliValidator.php',
+        'Hekmatinasser\\Verta\\Laravel\\VertaServiceProvider' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Laravel/VertaServiceProvider.php',
+        'Hekmatinasser\\Verta\\Verta' => __DIR__ . '/..' . '/hekmatinasser/verta/src/Verta.php',
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Events\\GateEvaluated' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Events/GateEvaluated.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
@@ -6742,14 +6790,6 @@ class ComposerStaticInit589cc0f65c3aaa7d4e9024d545bc1974
         'Termwind\\ValueObjects\\Node' => __DIR__ . '/..' . '/nunomaduro/termwind/src/ValueObjects/Node.php',
         'Termwind\\ValueObjects\\Style' => __DIR__ . '/..' . '/nunomaduro/termwind/src/ValueObjects/Style.php',
         'Termwind\\ValueObjects\\Styles' => __DIR__ . '/..' . '/nunomaduro/termwind/src/ValueObjects/Styles.php',
-        'Tests\\Browser\\CrawlerTest' => __DIR__ . '/../..' . '/tests/Browser/CrawlerTest.php',
-        'Tests\\Browser\\ExampleTest' => __DIR__ . '/../..' . '/tests/Browser/ExampleTest.php',
-        'Tests\\Browser\\Pages\\HomePage' => __DIR__ . '/../..' . '/tests/Browser/Pages/HomePage.php',
-        'Tests\\Browser\\Pages\\Page' => __DIR__ . '/../..' . '/tests/Browser/Pages/Page.php',
-        'Tests\\DuskTestCase' => __DIR__ . '/../..' . '/tests/DuskTestCase.php',
-        'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
-        'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
-        'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',

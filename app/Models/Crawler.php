@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Crawler extends Model
 {
-    protected $fillable = ['url', 'title', 'description', 'content'];
+    protected $fillable = ['url', 'title', 'description', 'content', 'create_date'];
 }
