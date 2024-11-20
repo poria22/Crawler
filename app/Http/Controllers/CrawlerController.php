@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Observers\Pokemon\PokemonGenerationScraperObserver;
-use \Hekmatinasser\Verta\Verta;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use Spatie\Crawler\Crawler;
 use Spatie\Crawler\CrawlObservers\CrawlObserver;
 
@@ -20,5 +18,10 @@ class CrawlerController extends Controller
             ->setMaximumDepth(0)
             ->setTotalCrawlLimit(1)
             ->startCrawling($url);
+
+        $crawlers = \App\Models\Crawler::all();
+
+        return view('crawler', compact('crawlers'));
     }
+
 }

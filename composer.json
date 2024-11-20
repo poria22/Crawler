@@ -9,6 +9,7 @@
         "hekmatinasser/verta": "^8.4",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "livewire/livewire": "^3.5",
         "spatie/crawler": "^8.2"
     },
     "require-dev": {
